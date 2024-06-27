@@ -24,6 +24,26 @@ console.log(greet('Steve')) */
 const greet = (name) => 'Hello, ' + name + '!'
 console.log(greet('Rebecca'))
 
+const createUser = (name, age) => ({
+  name: name,
+  age: age,
+})
+
+const getUserAge = (user) => user.age;
+
+const isAdult = (user) => user.age = 18;
+
+const users = [
+    createUser('Alice', 25),
+    createUser('Bob', 17),
+    createUser('Charlie', 30)
+];
+
+/* const adults = users.filter(function (user) {
+  return isAdult(user); */
+
+const adults = users.filter(user => isAdult(user)) 
+
   </script>
 </body>
 </html>
