@@ -17,8 +17,30 @@
     let evenNumber = numbers.filter(number => {
       return number % 2 === 0;
     })
-
     console.log(evenNumber)
+
+    //.filter method  Number 2 below
+
+    let strings = ['apple', 'banana', 'cherry', 'date', 'fig', 'grape'];
+// Use .filter to create a new array with strings longer than 5 characters
+    let longStrings = strings.filter(getLongStrings => {
+      return  getLongStrings.length >= 5;
+    })
+    console.log(longStrings)
+
+    //.filter method  Number 3 below
+    let people = [
+    { name: 'Alice', age: 17 },
+    { name: 'Bob', age: 22 },
+    { name: 'Charlie', age: 15 },
+    { name: 'Dave', age: 19 }
+];
+// Use .filter to create a new array with people aged 18 or older
+    let adults = people.filter(person => {
+      return person.age >= 18;
+    })
+    console.log(adults)
+
   </script>
 </body>
 </html>
