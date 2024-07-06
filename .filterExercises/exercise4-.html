@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let items = [
+    { name: 'Notebook', price: 30 },
+    { name: 'Laptop', price: 1000 },
+    { name: 'Pen', price: 5 },
+    { name: 'Desk', price: 200 }
+];
+// Use .filter to create a new array with items priced over $50
+
+let cheapItems = items.filter(item => {
+  return item.price >= 50;
+})
+console.log(cheapItems)
+  </script>
+</body>
+</html>
