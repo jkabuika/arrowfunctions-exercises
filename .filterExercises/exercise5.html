@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    let students = [
+    { name: 'Alice', grade: 'B' },
+    { name: 'Bob', grade: 'A' },
+    { name: 'Charlie', grade: 'C' },
+    { name: 'Dave', grade: 'A' }
+];
+// Use .filter to create a new array with students who have a grade of 'A'
+
+    let topStudents = students.filter(student => {
+      return student.grade === 'A'
+    })
+    console.log(topStudents)
+
+  </script>
+  
+</body>
+</html>
