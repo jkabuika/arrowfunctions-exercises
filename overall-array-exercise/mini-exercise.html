@@ -12,7 +12,11 @@
     let library = []
 
     function addBook(title, author, pages, isBorrowed = false) {
-      library.push((title, author, pages, isBorrowed))
+      library.push({ title, author, pages, isBorrowed })
+    }
+
+    function removeBook(title) {
+      library = library.filter(book => book.title !== title);
     }
 
 
